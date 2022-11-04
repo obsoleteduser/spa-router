@@ -13,7 +13,7 @@ const SinglePage = ()=>{
         <div style={{display: 'flex', flexDirection: 'column', textAlign: "center", width: '50vw'}}>
            <h1> {post.title}</h1>
             {post.body}
-        </div> : 'Loading...'
+        </div> : window.navigator.onLine ? 'Loading...' : 'You have no internet connection!'
     )
 }
 

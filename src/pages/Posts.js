@@ -21,7 +21,7 @@ const Posts = () => {
                     <li>{post.title}</li>
                     </Link>
                 ))
-            : 'Loading...'}
+            : window.navigator.onLine ? 'Loading...' : 'You have no internet connection!'}
         </div>        
         
     )
