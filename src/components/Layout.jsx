@@ -15,7 +15,7 @@ function Layout() {
                 <CustomLink className={checkActivity} to="/about">About us</CustomLink>
             </div>
             <Outlet></Outlet>
-            <footer>© 2022 All Rights Reserved</footer>
+            <footer>© {new Date().getFullYear()} All Rights Reserved</footer>
         </>
     )
 }
