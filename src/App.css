@@ -25,6 +25,11 @@ a{
   color: black;
 }
 
+.active-link{
+  color: grey;
+  cursor: default;
+}
+
 footer{
   width: 100vw;
   text-align: center;

@@ -1,12 +1,18 @@
 import { NavLink, Outlet } from 'react-router-dom'
+import { CustomLink } from './CustomLink'
 
 function Layout() {
+
+    const checkActivity = ({isActive})=>{
+        return isActive ? 'active-link' : ''
+    }
+
     return (
         <>
             <div className="App__link-controller">
-                <NavLink to="/">Main</NavLink>
-                <NavLink to="/posts">Posts</NavLink>
-                <NavLink to="/about">About us</NavLink>
+                <CustomLink className={checkActivity} to="/">Main</CustomLink>
+                <CustomLink className={checkActivity} to="/posts">Posts</CustomLink>
+                <CustomLink className={checkActivity} to="/about">About us</CustomLink>
             </div>
             <Outlet></Outlet>
             <footer>© 2022 All Rights Reserved</footer>
