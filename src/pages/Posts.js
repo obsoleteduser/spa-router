@@ -21,7 +21,7 @@ const Posts = () => {
                     <li>{post.title}</li>
                     </Link>
                 ))
-            : 'Error'}
+            : 'Loading...'}
         </div>        
         
     )
